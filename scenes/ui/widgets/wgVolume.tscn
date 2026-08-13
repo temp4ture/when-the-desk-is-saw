@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dbgkfqqrpkr6d"]
+
+[ext_resource type="Theme" uid="uid://cle2qxvhrms2" path="res://assets/themes/ui/CUSubmenuTheme.tres" id="1_c0niq"]
+[ext_resource type="Script" uid="uid://dcqtvuc7ky335" path="res://Scripts/ui/widgets/wgCheckbox.gd" id="2_s4607"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72ypp"]
+
+[node name="SettingsCheck" type="PanelContainer" unique_id=2051856741]
+anchor_right = 0.3715278
+anchor_bottom = 0.046296295
+theme = ExtResource("1_c0niq")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_72ypp")
+script = ExtResource("2_s4607")
+label = "Setting Label"
+key = "setting-config-key"
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=507161754]
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer" unique_id=981928196]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Label" type="RichTextLabel" parent="HBoxContainer" unique_id=170594188]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/line_separation = -8
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+text = "Setting Label"
+fit_content = true
+scroll_active = false
+vertical_alignment = 3

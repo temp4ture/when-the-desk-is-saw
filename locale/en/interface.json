@@ -1,0 +1,63 @@
+{
+    "lang-name": "English",
+    "lang-name-en": "English",
+    "console": {
+        "title": "Console",
+        "command-text": "Command"
+    },
+    "console-notice": [
+        "[COLOR=PURPLE]You can reopen the terminal by pressing F1 while the DeskSaw window is active![/COLOR]\n",
+        "EXPIE OR ANY CHARACTERS THAT MAY BE PRESENT HERE ARE NOT MINE. THIS IS A FAN PROJECT.\n",
+        "THE SOURCE CODE IS AVAILABLE FOR FREE AT 'https://github.com/dee-dee-catorce/desksaw/'.\n",
+        "IF YOU GOT THIS SOFTWARE FROM ANYWHERE ELSE OR PAID FOR IT, [COLOR=#cc2949]YOU'VE BEEN FOOLED![/COLOR]"
+    ],
+    "settings": {
+        "title": "Settings",
+        "tabs": {
+            "general": "General",
+            "behavior": "Expies",
+            "audio": "Audio",
+            "other": "Other"
+        },
+        "labels": {
+            "simple": "Simple mode [Disables death and complex behaviors]",
+            "persistence": "Keep Expies across sessions",
+            "no-mood": "Disable mood",
+            "no-speech": "Disable ALL speech",
+            "no-speech-pass": "Disable passive speech",
+            "no-audio": "Mute ALL sounds",
+            "no-audio-whine": "Mute whining sounds",
+            "no-audio-bark": "Mute barking sounds",
+            "no-audio-pet": "Mute petting sounds",
+            "default-skin": "Default skin name",
+            "pixel-rendering": "Enable pixel rendering (janky!)"
+        },
+        "savedata_btn": "Open save data folder",
+        "quit_btn": "Close application"
+    },
+    "skins": {
+        "title": "Skins",
+        "spawn_btn": " Spawn ",
+        "folder-btn": " Open Folder "
+    },
+    "statistics": {
+        "title": "Statistics",
+        "topText": "statistics: i unno",
+        "bottomText": "i think this is not implemented yet"
+    },
+    "command-descriptions": {
+        "help": "Shows all available console commands.",
+        "log": "Log a string to the console.",
+        "clear": "Clear the console history.",
+        "clearItems": "Remove entities. Filtered by 'entity', 'object', item name or expie skin name.",
+        "expieID": "Toggle debug IDs for expies.",
+        "nukeSettings": "Resets ALL data. Use as a last resort if the app malfunctions.",
+        "openSkinFolder": "Opens the user skins folder.",
+        "resizeConsole": "Resizes the terminal with the provided width and height in pixels.",
+        "setMonitor": "[Temporary] Change the active monitor.",
+        "setMood": "[Debug] Sets expies' moods. Might not work.",
+        "spawn": "Spawns an item. Only available items are 'crate' and 'sawblade'.",
+        "spawnExpie": "[Temporary, use the skin spawner instead] Spawns an expie!"
+    },
+    "expie": "Expie"
+}

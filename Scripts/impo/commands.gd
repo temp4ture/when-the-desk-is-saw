@@ -42,10 +42,10 @@ func spawnExpie(petId: String = ""):
 	var instance = scene.instantiate()
 
 	if petId == "":
-		var skinName = GlobalVariable.userSkinPath.substr(0, len(GlobalVariable.userSkinPath) - 1)
-		skinName = skinName.substr(skinName.rfind("/") + 1)
+		var skinName = GlobalVariable.userSkinPath.substr(0, len(GlobalVariable.userSkinPath) - 1) 
+		skinName = skinName.substr(skinName.rfind("/") + 1) 
 		petId = gbData.addPet(skinName)
-	instance.get_node("behavior").petId = petId
+	instance.get_node("behavior").petId = petId 
 
 	var wrapper = Node2D.new()
 	wrapper.scale = Vector2(4.0, 4.0)
@@ -160,14 +160,8 @@ func _ready():
 	Console.print("[color=PURPLE]You can reopen this console any time by Ctrl + Right Clicking on any Desksawian![/color]")
 	Console.execute("setMonitor 2")
 	#setting stuff that would probably have a better solution to it
-
-
 	Console.print("EXPIE OR ANY CHARACTERS THAT MAY BE PRESENT HERE ARE NOT MINE. THIS IS A FAN PROJECT")
 	Console.print("IF YOU PAID FOR THIS OR GOT IT FROM SOMEWHERE NOT ON GITHUB, YOU DID IT WRONG!")
-
-	applySettings()
-
-func applySettings():
 	## resize
 	root.size.x = gbData.settings.ConsoleSize.x
 	root.size.y = gbData.settings.ConsoleSize.y

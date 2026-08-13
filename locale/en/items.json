@@ -1,0 +1,10 @@
+{
+    "test": {
+        "name": "Test Item",
+        "description": "this is a test item! (and locale!)"
+    },
+    "crate": {
+        "name": "Crate",
+        "description": "A standard crate. It's weight scales with size."
+    }
+}

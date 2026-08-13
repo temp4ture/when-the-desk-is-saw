@@ -73,7 +73,10 @@ func swapTex(sprite: Sprite2D, skinFileNames: Dictionary):
 		"texture": tex
 	}
 func loadUserTex(userPath: String):
-	if not FileAccess.file_exists(userPath):
+	if (
+		not FileAccess.file_exists(userPath)
+		or userPath.begins_with("res://")
+	):
 		return null
 
 	var image = Image.new()

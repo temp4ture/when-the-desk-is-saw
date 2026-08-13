@@ -240,9 +240,9 @@ func _on_body_part_input(_viewport: Node, event: InputEvent, _shape_idx: int, bo
 	if event.pressed and not _hovered_bodies.is_empty() and _hovered_bodies.back() == body and not _dragging:
 		#dragging
 		if event.button_index == MOUSE_BUTTON_RIGHT:
-			if Input.is_action_pressed("ctrl"):
-				GlobalVariable.consoleF(true)
-				return
+			#if Input.is_action_pressed("ctrl"):
+			#	GlobalVariable.consoleF(true)
+			#	return
 			var mouse_pos := rigid_bodies_container.get_global_mouse_position()
 			_startDrag(body, mouse_pos)
 		#pet limb

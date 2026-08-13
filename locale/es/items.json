@@ -1,0 +1,10 @@
+{
+    "test": {
+        "name": "Objeto de Prueba",
+        "description": "éste es un objeto (y tradución) de prueba!"
+    },
+    "crate": {
+        "name": "Caja",
+        "description": "Caja común. Su peso escala con su tamaño."
+    }
+}

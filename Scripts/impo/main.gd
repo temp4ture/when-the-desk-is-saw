@@ -35,7 +35,7 @@ func _ready():
 	if gbData.settings["expiePersistence"]:
 		loadExpiePersistence()
 	else:
-		$CanvasLayer2/ConsoleContainer/Main/ConsoleContainer/Commands.spawnExpie()
+		Console.execute("spawnExpie")
 
 	#lol()
 	"""
@@ -45,7 +45,7 @@ func _ready():
 		gbData.data["firstLaunch"] = false
 		var use_vulkan: bool = await GlobalVariable.makePopUp(
 			"Do you currently see a black screen behind the application? \n\n Clicking yes will switch the rendering to [wave]Vulkan[/wave] \n This can be changed later in settings.",
-			$CanvasLayer2,
+			$InterfaceLayer,
 			Vector2(screenWidth / 2, screenHeight / 2)
 		)
 		GlobalVariable._apply_renderer_and_restart(use_vulkan)
@@ -60,9 +60,9 @@ func yeah(t: bool):
 
 func createBorders():
 	taskbarPos = clampi(taskbarPos, 0, screenHeight)
-	$Floor.position = Vector2(screenWidth / 2, taskbarPos)
-	$SideL.position = Vector2(0, screenHeight / 2)
-	$SideR.position = Vector2(screenWidth, screenHeight / 2)
+	$Floor.position = Vector2(int(float(screenWidth) / 2), taskbarPos)
+	$SideL.position = Vector2(0, int(float(screenHeight) / 2))
+	$SideR.position = Vector2(screenWidth, int(float(screenHeight) / 2))
 
 
 func updateBorders():
@@ -81,14 +81,20 @@ func updateBorders():
 
 func update_obj_metas():
 	"""Assign 'catagory' meta with 'object' to all scenes in the object path."""
-	
+	# this chunk of code used to not work because it was trying to
+	# access "/object" instead of "/objects"... but now that that's fixed,
+	# whenever you try and drag any of the props spawned in, the
+	# console complains and the project freezes...
+	# sooo until that's fixed, let this one be.
+	return
+
 	var dir = DirAccess.open("res://scenes/objects")
 	dir.list_dir_begin()
 	var fileName = dir.get_next()
 	
 	while fileName != "":
 		if fileName.ends_with(".tscn"):
-			var path = "res://scenes/object".path_join(fileName)
+			var path = "res://scenes/objects".path_join(fileName)
 			var object = load(path)
 			if object is PackedScene:
 				var instance = object.instantiate()
@@ -112,14 +118,14 @@ func loadExpiePersistence():
 		print("loading '", petId, "' (skin: ", petData.get("skin", "Default"), ")...")
 		await get_tree().create_timer(0.25).timeout
 		GlobalVariable.userSkinPath = "user://skin/" + petData.get("skin", "Default") + "/"
-		$CanvasLayer2/ConsoleContainer/Main/ConsoleContainer/Commands.spawnExpie(petId)
+		Console.spawnExpie(petId)
 		print("loaded ", petId)
 """
 func lol():
 	while get_tree():
 		await get_tree().create_timer(1).timeout
 		var r = randi_range(1, 200)
-		$CanvasLayer2/TextureRect.visible = (r == 1)
+		$InterfaceLayer/TextureRect.visible = (r == 1)
 		if (r == 1):
 			AudioManager.play_sfx(preload("res://assets/sounds/effects/stalkerscream.wav"))
 		await get_tree().create_timer(.2).timeout

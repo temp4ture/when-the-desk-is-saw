@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://dskeh4pbu0cgp"]
+
+[ext_resource type="Theme" uid="uid://dknpyc8k8uut1" path="res://assets/themes/ui/CasWindowTheme.tres" id="1_tvj7h"]
+[ext_resource type="Script" path="res://Scripts/ui/fsUI.gd" id="2_omiqs"]
+[ext_resource type="Theme" uid="uid://cle2qxvhrms2" path="res://assets/themes/ui/CasMenuTheme.tres" id="3_wvg1n"]
+[ext_resource type="Texture2D" uid="uid://d1gwmaqu5ieaa" path="res://assets/textures/temp/glupie.png" id="4_eh51f"]
+
+[node name="ObjectSpawner" type="Panel" unique_id=630227634 node_paths=PackedStringArray("searchLabel")]
+anchor_right = 0.390625
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tvj7h")
+script = ExtResource("2_omiqs")
+searchLabel = NodePath("MarginContainer/VBoxContainer/LineEdit/SearchLabel")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=342436265]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=294396762]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=1495192428]
+layout_mode = 2
+
+[node name="SearchLabel" type="Label" parent="MarginContainer/VBoxContainer/LineEdit" unique_id=1624447799]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.1764706)
+theme_override_font_sizes/font_size = 16
+text = " Search objects..."
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer" unique_id=100944294]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_wvg1n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=90811020]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.38
+theme = ExtResource("3_wvg1n")
+theme_override_constants/separation = 2
+
+[node name="ItemPreview" type="Panel" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=859678754]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.6
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemPreview" unique_id=1886668085]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 33
+theme_override_constants/margin_top = 33
+theme_override_constants/margin_right = 33
+theme_override_constants/margin_bottom = 33
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemPreview/MarginContainer" unique_id=695908683]
+layout_mode = 2
+texture = ExtResource("4_eh51f")
+expand_mode = 1
+
+[node name="ItemTooltip" type="Panel" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2017596862]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip" unique_id=976537682]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.009375
+anchor_right = 1.0
+anchor_bottom = 1.009375
+offset_top = 1.5
+offset_bottom = -1.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip/MarginContainer" unique_id=1767816082]
+layout_mode = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip/MarginContainer/VBoxContainer" unique_id=487438056]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Name" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1609476975]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.4
+text = "Object Name"
+fit_content = true
+
+[node name="Desc" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1501294027]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/line_separation = -7
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/bold_font_size = 16
+theme_override_font_sizes/bold_italics_font_size = 16
+theme_override_font_sizes/italics_font_size = 16
+theme_override_font_sizes/mono_font_size = 16
+bbcode_enabled = true
+text = "This is the object's description!
+Add some [b]quirky[/b] things here.. awesome sauce flavor texto.
+Microsoft Windows Movie Maker"
+
+[node name="Properties" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/ItemTooltip/MarginContainer/VBoxContainer" unique_id=802635237]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.65
+theme_override_constants/line_separation = -7
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 12
+theme_override_font_sizes/italics_font_size = 12
+theme_override_font_sizes/mono_font_size = 12
+bbcode_enabled = true
+text = "[b]Some more nerd properties about the object.
+I dread having to implement custom icons.
+🫃Weight: 14e3.8g
+🫃Trade Value: 7
+🫃Might contain fent[/b]"
+
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/LineEdit" to="." method="_on_search_line_changed"]

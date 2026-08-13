@@ -1,0 +1,208 @@
+{
+	"!! VERY IMPORTANT NOTE FOR YOU, THE LOCALE FILE READER !!": [
+		"this is placeholders!! these will change!!",
+		"in the meantime have fun grubbing on text that isnt even in use",
+		"the only keys currently active are:",
+		"HappyPassive, Passive, VeryLowPassive, screamBIG, beingDragged, getUp, getUpPet, pet, start, lastmoments, sleepy, reallySleepy & hungry",
+		"and the rest of them smell like wet garlic.. allegedly."
+	],
+	"start": [
+		"... Hello?",
+		"Uhhhhh.....",
+		"Where am I...?",
+		"What kind of test is this?"
+	],
+	"FirstInteraction": [
+		"What the hell?!",
+		"What is that thing?!",
+		"Uhm, hello?"
+	],
+	"HappyPassive": [
+		"[wave]:3",
+		"[wave]I like this!",
+		"[wave]I'm enjoying myself...",
+		"[wave]I enjoy your company.",
+		"[wave]Hello!",
+		"[wave]yay!",
+		"[wave]I feel great!",
+		"[wave]Waow!"
+	],
+	"Passive": [
+		"I feel alright...",
+		"This test is weird...",
+		"... Nothing",
+		"Uhhh......",
+		"When will this test end...?",
+		"This test kinda sucks.",
+		"Hello?"
+	],
+	"MidPassive": [
+		"This isn't horrible...",
+		"Better here than there...",
+		"I honestly dont mind this but things could be better."
+	],
+	"LowPassive": [
+		"3;",
+		"This sucks...",
+		"When will this test end...?",
+		"I want friends back..."
+	],
+	"VeryLowPassive": [
+		"[shake]I want to go back!",
+		"[shake]I- I hate this...!",
+		"[shake]Please!",
+		"[shake]I want to leave!",
+		"[shake]I- I don't want to be here!"
+	],
+	"screamBIG": [
+		"[shake]WAHHHAHHHHHHHHHHHHHHH!!!!!!",
+		"[shake]HEY!!!!!!",
+		"[shake]AAAAAAAAAAHHHHHHHH!!!!!!",
+		"[shake]WOAHHHHHH!!"
+	],
+	"beingDragged": [
+		"[shake]Put me down! Please...",
+		"I don't like this...",
+		"Can you put me down? Please?!"
+	],
+	"getUp": [
+		"[wave]Ugh... no more please!",
+		"[wave]Ow!",
+		"[wave]Please never do that again!",
+		"[wave]Stop that!"
+	],
+	"getUpPet": [
+		"[wave]That was a bit too much... but I liked it.",
+		"[wave]I feel so dizzy...",
+		"[wave]Ugh... I didn't expect that."
+	],
+	"hungry": [
+		"Could do with a bite to eat.",
+		"I'm hungry.",
+		"I feel hungry.",
+		"I want to eat!",
+		"I feel peckish.",
+		"Stomach's buggin' me.",
+		"My tummy's all rumbly."
+	],
+	"VeryHungry": [
+		"I'm starving.",
+		"I really want to eat.",
+		"So hungry...",
+		"I'm REALLY hungry.",
+		"I need to eat... Please.",
+		"I feel malnourished.",
+		"I'm gonna bite my arm off.",
+		"Really hungry.",
+		"I'm starving!",
+		"Starving...",
+		"I'm so hungry... I could eat a... uhh... a... uhm...?",
+		"I'm starving for a bite to eat.",
+		"I'd kill to eat something.",
+		"I feel so weak... I'm hungry...",
+		"I'm SO hungry!",
+		"I'm really starving here.",
+		"I'm malnourished.",
+		"I'd eat anything right now!",
+		"I'm gonna starve...",
+		"My stomach's hurting for food...",
+		"Uggh... Hunger pains...",
+		"Ghh... stomach... hungry.",
+		"need.. food...",
+		"Food...",
+		"Uuuugh. I really want a bite to eat.",
+		"My stomach's really empty.",
+		"Ghh... I'm STARVING!",
+		"My body is wasting away..."
+	],
+	"FoodBad": [
+		"Ew!",
+		"Yuck!"
+	],
+	"FoodGood": [
+		"I like this.",
+		"Can you get more of this?"
+	],
+	"pet": [
+		"T-That feels nice.",
+		"T-thanks!",
+		"This is nice..",
+		"...I like it.",
+		"...that's nice.",
+		"...uh, thank you...?"
+	],
+	"PetRejection": [
+		"Hey, stop that!",
+		"Don't touch me!",
+		"Get away from me!"
+	],
+	"Interested": [
+		"?",
+		"..?"
+	],
+	"Ouchies": [
+		"[shake]Stop!",
+		"[shake]Stop it!",
+		"[shake]OW!"
+	],
+	"hateyou": [
+		"I hope you know that you are REALLY annoying...",
+		"I actually hate you.",
+		"You disgust me",
+		"Genuinely FUCK you",
+		"Vermin. I hope you rot.",
+		"Prick.",
+		"Does anybody actually like you?",
+		"You are all horrible people",
+		"I know whats happening to my friends. You pig",
+		"I refuse to do you anything for you. You are a horrible person.",
+		"How could you...?"
+	],
+	"panic": [
+		"[shake]MAKE IT STOP MAKE IT STOP!!!",
+		"[shake]LET ME OUT!!!!",
+		"[shake]PLEASE!",
+		"[shake]I CANT DO IT ANYMORE!!!!",
+		"[shake]I DONT WANT TO BE HERE ANYMORE!!!!!!!!!",
+		"[shake]END THIS TEST PLEASE!!! I CANT DO IT!"
+	],
+	"lastmoments": [
+		"[stupid][shake]Ghh... ugh...",
+		"[stupid][shake]HHHHHhp... AAAAAcca...",
+		"[stupid][shake]K-kff... hh..",
+		"[stupid][shake]M... n-nh..."
+	],
+	"sleepy": [
+		"[wave]Nap time....",
+		"[wave]Im sleepy...",
+		"[wave]*yawn*",
+		"[wave]Im getting sleepy...",
+		"[wave]Getting a little drowsy..."
+	],
+	"reallySleepy": [
+		"I have to... lie down...",
+		"My eyes are so heavy...",
+		"I can't... see straight...",
+		"Just some sleep...",
+		"I'm so... worn out...",
+		"Can't keep my eyes open...",
+		"When can I lay down...",
+		"I'm about to fall asleep...",
+		"...",
+		"So tired...",
+		"I'm so sleepy...",
+		"Really tired..."
+	],
+	"seq1": [
+		"... Can I talk to you about something?"
+	],
+	"seq2": [
+		"That game that you have... Casualties Unknown... Is that whats happening to my friends?"
+	],
+	"noticing": [
+		"Hello?"
+	],
+	"test2": [
+		"[wave]The quick brown fox jumped over the lazy dog."
+	]
+}

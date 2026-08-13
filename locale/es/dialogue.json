@@ -1,0 +1,209 @@
+{
+	"!! VERY IMPORTANT NOTE FOR YOU, THE LOCALE FILE READER !!": [
+		"¡¡estos son placeholders!! ¡¡van a cambiar!!",
+		"en lo mientras diviertete con texto que nisiquiera está implementado",
+		"los únicos keys en uso son:",
+		"HappyPassive, Passive, VeryLowPassive, screamBIG, beingDragged, getUp, getUpPet, pet, start, lastmoments, sleepy, reallySleepy & hungry",
+		"y el resto huele a ajo mojado.. supuestamente."
+	],
+	"start": [
+		"... ¿Hola?",
+		"Uhhhhh.....",
+		"¿Dónde estoy...?",
+		"¿Qué clase de prueba es ésta?"
+	],
+	"FirstInteraction": [
+		"¡¿Qué demonios?!",
+		"¡¿Qué es esa cosa?!",
+		"Umm, ¿hola?"
+	],
+	"HappyPassive": [
+		"[wave]:3",
+		"[wave]¡Esto me gusta!",
+		"[wave]Estoy disfrutando esto...",
+		"[wave]Disfruto tu compañía.",
+		"[wave]¡Hola!",
+		"[wave]¡Yupi!",
+		"[wave]¡Me siento bien!",
+		"[wave]¡Waos!"
+	],
+	"Passive": [
+		"Me siento bien...",
+		"Esta prueba es extraña...",
+		"... Nada",
+		"Uhhh......",
+		"¿Cuando acabará esto?...",
+		"Esta prueba apesta.",
+		"¿Hola?"
+	],
+	"MidPassive": [
+		"Esto no es horrible...",
+		"Mejor aquí que allá...",
+		"Honestamente esto no me molesta pero podría ser mejor."
+	],
+	"LowPassive": [
+		"3;",
+		"Esto apesta...",
+		"¿Cuando termina esta prueba...?",
+		"Extraño a mis amigos..."
+	],
+	"VeryLowPassive": [
+		"[shake]¡Quiero regresar!",
+		"[shake]¡O-odio esto!...",
+		"[shake]¡Por favor!",
+		"[shake]¡Quiero irme de aquí!",
+		"[shake]N-no.. ¡No quiero estar aquí!"
+	],
+	"screamBIG": [
+		"[shake]¡¡¡¡¡¡WAHHHAHHHHHHHHHHHHHHH!!!!!!",
+		"[shake]¡¡¡¡OYE!!!!",
+		"[shake]¡¡¡¡¡AAAAAAAAAAHHHHHHHH!!!!!",
+		"[shake]¡¡WOAHHHHHH!!"
+	],
+	"beingDragged": [
+		"[shake]¡Sueltame! Por favor...",
+		"Esto no me gusta...",
+		"¿Podrías soltarme? ¿¡Por favor?!"
+	],
+	"getUp": [
+		"[wave]Ugh... ¡ya no, por favor!",
+		"[wave]¡Ow!",
+		"[wave]¡No vuelvas a hacer eso!",
+		"[wave]¡Detente!"
+	],
+	"getUpPet": [
+		"[wave]Eso fué demasiado... pero fué agradable.",
+		"[wave]Estoy mareado...",
+		"[wave]Ugh... No esperaba eso."
+	],
+	"hungry": [
+		"Quisiera un bocado para comer.",
+		"Tengo hambre.",
+		"Estoy hambriento.",
+		"¡Quiero comer!",
+		"Me siento hambriento.",
+		"Me duele el estómago.",
+		"Me tiemba el estómago."
+	],
+	"VeryHungry": [
+		"Muero de hambre.",
+		"Realmente quiero comer.",
+		"Qué hambre...",
+		"Tengo MUCHA hambre.",
+		"Necesito comer... Por favor.",
+		"Me siento malnutrido.",
+		"Voy a arrancarme el brazo a mordidas.",
+		"Muy hambriento.",
+		"¡Me estoy muriendo de hambre!",
+		"Starving...",
+		"I'm so hungry... I could eat a... uhh... a... uhm...?",
+		"I'm starving for a bite to eat.",
+		"I'd kill to eat something.",
+		"I feel so weak... I'm hungry...",
+		"I'm SO hungry!",
+		"I'm really starving here.",
+		"I'm malnourished.",
+		"I'd eat anything right now!",
+		"I'm gonna starve...",
+		"My stomach's hurting for food...",
+		"Uggh... Hunger pains...",
+		"Ghh... stomach... hungry.",
+		"need.. food...",
+		"Food...",
+		"Uuuugh. I really want a bite to eat.",
+		"My stomach's really empty.",
+		"Ghh... I'm STARVING!",
+		"My body is wasting away..."
+	],
+	"FoodBad": [
+		"¡Ew!",
+		"¡Asco!"
+	],
+	"FoodGood": [
+		"Me agrada.",
+		"¿Podrías conseguir más de esto?"
+	],
+	"pet": [
+		"Eso se siente bien.",
+		"¡G-gracias!",
+		"Esto está bien..",
+		"...me gusta.",
+		"...qué agradable.",
+		"...uh, ¿gracias?..."
+	],
+	"PetRejection": [
+		"Hey, ¡detente!",
+		"¡No me toques!",
+		"¡Alejate de mí!"
+	],
+	"Interested": [
+		"?",
+		"..?"
+	],
+	"Ouchies": [
+		"[shake]¡Para!",
+		"[shake]¡Detente!",
+		"[shake]¡OW!"
+	],
+	"hateyou": [
+		"Espero que sepas que eres BASTANTE molesto...",
+		"Realmente te odio.",
+		"Me das asco",
+		"En serio JÓDETE",
+		"Púdrete. Parásito.",
+		"Cabrón.",
+		"¿Acaso no le caes bien a nadie?",
+		"Todos ustedes son gente horrible",
+		"Sé lo que le estás haciendo a mis amigos. Cerdo.",
+		"Me reuso a hacer algo por tí. Eres una persona horrible.",
+		"¿Como podrías...?"
+	],
+	"panic": [
+		"[shake]¡¡¡DETENTE, DETENTE, DETENTE!!!",
+		"[shake]¡¡¡SACAME DE AQUÍ!!!",
+		"[shake]¡POR FAVOR!",
+		"[shake]¡¡¡¡YA NO PUEDO HACER ESTO MÁS!!!!",
+		"[shake]¡¡¡¡¡¡NO QUIERO ESTAR AQUÍ NUNCA MÁS!!!!!!",
+		"[shake]¡¡¡DETÉN ESTA PRUEBA, POR FAVOR!!! ¡NO PUEDO HACER ESTO!"
+	],
+	"lastmoments": [
+		"[stupid][shake]Ghh... ugh...",
+		"[stupid][shake]HHHHHhp... AAAAAcca...",
+		"[stupid][shake]K-kff... hh..",
+		"[stupid][shake]M... n-nh..."
+	],
+	"sleepy": [
+		"[wave]Hora de descansar...",
+		"[wave]Tengo sueño...",
+		"[wave]*bostezo*",
+		"[wave]Me esta dando sueño...",
+		"[wave]Estoy un poco adormecido..."
+	],
+
+	"reallySleepy": [
+		"Tengo que... acostarme...",
+		"Me pesan los ojos...",
+		"No puedo... ver claramante...",
+		"Solo un poco de sueño...",
+		"Estoy... agotado...",
+		"Se me cierran los ojos...",
+		"Dónde me puedo recostar...",
+		"Estoy a punto de caerme dormido...",
+		"...",
+		"Exhausto...",
+		"Tengo mucho sueño...",
+		"Muy cansado..."
+	],
+	"seq1": [
+		"... Can I talk to you about something?"
+	],
+	"seq2": [
+		"That game that you have... Casualties Unknown... Is that whats happening to my friends?"
+	],
+	"noticing": [
+		"¿Hola?"
+	],
+	"test2": [
+		"[wave]Un jugoso zumo de piña y kiwi bien frío es exquisito y no lleva alcohol."
+	]
+}

@@ -1,0 +1,63 @@
+{
+    "lang-name": "Español",
+    "lang-name-en": "Spanish",
+    "console": {
+        "title": "Consola",
+        "command-text": "Comando"
+    },
+    "console-notice": [
+        "[COLOR=PURPLE]¡Puedes reabrir la terminal presionando F1 mientras la ventada de DeskSaw esté activa![/COLOR]\n",
+        "EXPIE U OTROS PERSONAJES PRESENTES NO SON MÍOS. ÉSTE ES UN PROJECTO HECHO POR FANS.\n",
+        "EL CODIGO FUENTE ESTÁ DISPONIBLE GRATIS EN 'https://github.com/dee-dee-catorce/desksaw/'.\n",
+        "SI CONSEGUISTE ESTE SOFTWARE EN OTRA PARTE O PAGASTE POR ÉL, [COLOR=#cc2949]¡TE HAN ENGAÑADO![/COLOR]"
+    ],
+    "settings": {
+        "title": "Opciones",
+        "tabs": {
+            "general": "General",
+            "behavior": "Expies",
+            "audio": "Audio",
+            "other": "Otros"
+        },
+        "labels": {
+            "simple": "Modo simple [Desactiva muertes y comportamientos complejos]",
+            "persistence": "Mantener Expies entre sesiones",
+            "no-mood": "Desactivar ánimo",
+            "no-speech": "Desactivar TODO el diálogo",
+            "no-speech-pass": "Desactivar el diálogo pasivo",
+            "no-audio": "Silenciar TODOS los sonidos",
+            "no-audio-whine": "Silenciar sonidos de llanto",
+            "no-audio-bark": "Silenciar sonidos de ladrado",
+            "no-audio-pet": "Silenciar sonidos al acariciar",
+            "default-skin": "Nombre por defecto de la apariencia",
+            "pixel-rendering": "Activar renderizado en pixeles (¡chafa!)"
+        },
+        "savedata_btn": "Abrir carpeta de guardados",
+        "quit_btn": "Cerrar aplicación"
+    },
+    "skins": {
+        "title": "Apariencias",
+        "spawn_btn": " Aparecer ",
+        "folder-btn": " Abrir carpeta "
+    },
+    "statistics": {
+        "title": "Estatisticas",
+        "topText": "estatisticas: nidea",
+        "bottomText": "creo que esto todavía no se implementa"
+    },
+    "command-descriptions": {
+        "help": "Muestra todos los comandos disponibles.",
+        "log": "Muestra texto en la consola.",
+        "clear": "Limpia el historial de comandos.",
+        "clearItems": "Remueve entidades. Filtrado por 'entity', 'object', nombre del objeto o nombre de la apariencia del expie.",
+        "expieID": "Alterna IDs debug en expies.",
+        "nukeSettings": "Reinicia TODO guardado. Usalo como último recurso si la aplicación falla.",
+        "openSkinFolder": "Abre la carpeta de apariencias.",
+        "resizeConsole": "Escala la terminal con la anchura y altura (en pixeles) proporcionada.",
+        "setMonitor": "[Temporal] Change the active monitor.",
+        "setMood": "[Debug] Sets expies' moods. Puede no funcionar.",
+        "spawn": "Aparece un objeto. Solo 'crate' y 'sawblade' están disponibles.",
+        "spawnExpie": "[Temporal, usa el menú de apariencias] ¡Aparece un expie!"
+    },
+    "expie": "Expie"
+}

@@ -9,6 +9,7 @@ var screenHeight: int = DisplayServer.screen_get_usable_rect().size.y
 var taskbarPos: int = DisplayServer.screen_get_usable_rect().end.y
 
 var clickZoneSum: int = 0
+@warning_ignore("unused_signal") # seems to be used outside of this script?
 signal persistenceWarning() # used to warn user if they have more than 20 expies stored in persistence save
 signal raga()
 signal skinswap()
@@ -36,16 +37,56 @@ func raisemoodF(t: int):
 func feedf(t: int):
 	feed.emit(t)
 
+func _get_newmain_ui_canvas() -> CanvasLayer:
+	var canvasName = "CanvasLayer2"
+	var canvas: CanvasLayer = get_tree().current_scene.find_child(canvasName)
+	if !canvas:
+		push_error("popup: canvas '%s' could not be found. is this function being called outside newmain?" % [canvasName])
+	return canvas
 
-func makePopUp(text: String, parent: CanvasLayer, position: Vector2) -> bool:
-	var path = "res://scenes/popUp.tscn"
-	var scene = load(path)
-	var instance = scene.instantiate()
-	parent.add_child(instance)
-	instance.owner = parent
-	instance.position = position
-	var result: bool = await instance.setup(text)
-	return result
+enum popupResultEnum {
+	YES = 1,
+	NO = 0,
+	CLOSE = -1
+}
+func makePopUp(
+	title: String = "Alert!",
+	text: String = "[rainbow]Sample text[/rainbow]",
+	position: Vector2 = Vector2(-1, -1), # -1 vector defaults to the center of the screen
+	size: Vector2 = Vector2(250, 180),
+	yes_text: String = "Yes",
+	no_text: String = "No",
+	enable_no_button: bool = true,
+	enable_close_button: bool = true,
+	enable_resize_button: bool = true,
+	size_minimum: Vector2 = Vector2.ZERO,
+	size_maximum: Vector2 = Vector2.INF
+) -> popupResultEnum:
+	var canvas = _get_newmain_ui_canvas()
+	var popup: CustomPopup = load("res://scenes/ui/popUp.tscn").instantiate()
+	canvas.add_child(popup)
+	popup.owner = canvas
+	# the chances of there being a better way of doing all this is...... considerable...
+	popup.windowControl.minimumWindowSize = size_minimum
+	popup.windowControl.maximumWindowSize = size_maximum
+	popup.windowControl.window_resize(size)
+	if position.x < 1 or position.y < 1:
+		position = Vector2(
+			(float(DisplayServer.screen_get_usable_rect().size.x) / 2) - (size.x / 2),
+			(float(DisplayServer.screen_get_usable_rect().size.y) / 2) - (size.y / 2)
+		)
+	popup.position = position
+	popup.titleText = title
+	popup.labelText = text
+	popup.yesButtonText = yes_text
+	popup.noButtonText = no_text
+	popup.update_labels()
+	popup.enableNoButton = enable_no_button
+	popup.enableCloseButton = enable_close_button
+	popup.enableResizeButton = enable_resize_button
+	popup.update_buttons()
+	# record output!
+	return await popup.hasPressedSignal
 
 #just ignore this. pretend like i didnt waste time adding this and it just doesnt work
 func _apply_renderer_and_restart(use_vulkan: bool) -> void:

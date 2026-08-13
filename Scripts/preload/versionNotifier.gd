@@ -16,7 +16,8 @@ func _ready():
 		HTTPClient.METHOD_GET
 	)
 
-func _request_done(result, code, headers, body):
+func _request_done(_result, code, _headers, body):
+	# note that we're not using result nor headers
 	if code != 200:
 		print("err", code)
 		return
